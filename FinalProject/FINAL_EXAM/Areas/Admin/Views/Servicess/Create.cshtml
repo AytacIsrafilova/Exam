@@ -1,0 +1,25 @@
+﻿@using Core.Models
+
+@model Servicess
+<div class="container">
+    <div class=row>
+        
+        <div class="col-6">
+            <form  action="Create" method="post" enctype="multipart/form-data">
+                <div class="form-group">
+                    <label asp-for=Title> Title</label>
+                    <input asp-for=Title class="form-control">
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for=ImgUrl> ImgUrl</label>
+                    <input asp-for=ImgUrl class="form-control">
+                    <span asp-validation-for="ImgUrl" class="text-danger"></span>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+        </div>
+    </div>
+
+</div>
